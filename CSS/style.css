@@ -27,3 +27,14 @@ body {
     font-weight: 300;
     color: #666;
 }
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation {
+    color: #777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}

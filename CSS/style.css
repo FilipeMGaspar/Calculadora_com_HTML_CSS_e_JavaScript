@@ -38,3 +38,11 @@ body {
     overflow-wrap: break-word;
     min-height: 1.6em;
 }
+
+#current-operation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 00.2em;
+    overflow-wrap: break-word;
+}

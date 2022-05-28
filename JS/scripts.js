@@ -3,10 +3,15 @@ const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container button");
 
 class Calculator {
-    constructor() {
-        
+    constructor(previousOperationText, currentOperationText) {
+        this.previousOperationText = previousOperationText
+        this.currentOperationText = currentOperationText
+
+        this.currentOperation = ""
     }
 }
+
+const calc = new Calculator(previousOperationText, currentOperationText); // Intancia do objeto
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {

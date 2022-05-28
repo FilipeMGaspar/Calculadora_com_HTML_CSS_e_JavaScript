@@ -20,6 +20,11 @@ class Calculator {
         this.updateScreen()
     }
 
+    // Processa todas as operações da calculadora
+    processOperation(operation) {
+        console.log(operation);
+    }
+
     //Muda os valores no visor da calculadora
     updateScreen() {
         this.currentOperationText.innerText += this.currentOperation; 

@@ -12,7 +12,13 @@ class Calculator {
 
     // Adiciona digitos no visor da calculadora
     addDigit(digit) {
-        console.log(digit);
+        this.currentOperation = digit
+        this.updateScreen()
+    }
+
+    //Muda os valores no visor da calculadora
+    updateScreen() {
+        this.currentOperationText.innerText += this.currentOperation; 
     }
 }
 

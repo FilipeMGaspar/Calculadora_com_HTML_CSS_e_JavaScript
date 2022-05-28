@@ -22,7 +22,10 @@ class Calculator {
 
     // Processa todas as operações da calculadora
     processOperation(operation) {
-        console.log(operation);
+        // obtem valores atuais e valores anteriores
+        let operationValue
+        let previous = +this.previousOperationText.innerText;
+        let current = +this.currentOperationText.innerText;
     }
 
     //Muda os valores no visor da calculadora

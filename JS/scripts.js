@@ -9,6 +9,11 @@ class Calculator {
 
         this.currentOperation = ""
     }
+
+    // Adiciona digitos no visor da calculadora
+    addDigit(digit) {
+
+    }
 }
 
 const calc = new Calculator(previousOperationText, currentOperationText); // Intancia do objeto

@@ -2,9 +2,7 @@ const previousOperationText = document.querySelector("#previous-operation");
 const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container button");
 
-class Calculator {
-
-}
+class Calculator {}
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -12,4 +10,4 @@ buttons.forEach((btn) => {
 
         console.log(value);
     })
-})
+});

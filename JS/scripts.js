@@ -12,7 +12,7 @@ class Calculator {
 
     // Adiciona digitos no visor da calculadora
     addDigit(digit) {
-
+        console.log(digit);
     }
 }
 
@@ -23,7 +23,7 @@ buttons.forEach((btn) => {
         const value = e.target.innerText;
 
         if(+value >= 0 || value === ".") {
-            console.log(value);
+            calc(value);
         } else{
             console.log("op:" + value);
         }

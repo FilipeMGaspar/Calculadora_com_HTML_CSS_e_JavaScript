@@ -12,6 +12,10 @@ class Calculator {
 
     // Adiciona digitos no visor da calculadora
     addDigit(digit) {
+        // Verifica se a operação atual já contém um ponto
+        if(digit === "." && this.currentOperationText.innerText.includes(".")) {
+            return;
+        }
         this.currentOperation = digit
         this.updateScreen()
     }

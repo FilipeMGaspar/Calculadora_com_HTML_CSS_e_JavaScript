@@ -26,6 +26,13 @@ class Calculator {
         let operationValue
         let previous = +this.previousOperationText.innerText;
         let current = +this.currentOperationText.innerText;
+
+        switch(operation){  // Fiquei AQUI 
+            case "+" :
+                break;
+            default:
+                return;
+        }
     }
 
     //Muda os valores no visor da calculadora

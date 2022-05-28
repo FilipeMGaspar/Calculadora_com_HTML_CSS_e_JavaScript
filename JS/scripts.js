@@ -40,7 +40,7 @@ buttons.forEach((btn) => {
         if(+value >= 0 || value === ".") {
             calc.addDigit(value);
         } else{
-            console.log("op:" + value);
+            calc.processOperation(value);
         }
         
     })

@@ -106,7 +106,8 @@ class Calculator {
 
     // Apaga todas as operações
     processClearAllOperations(){
-        
+        this.currentOperationText.innerText = "";
+        this.previousOperationText.innerText = "";
     }
 }
 

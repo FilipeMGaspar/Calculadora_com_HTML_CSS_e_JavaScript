@@ -24,11 +24,13 @@ class Calculator {
     processOperation(operation) {
         // obtem valores atuais e valores anteriores
         let operationValue
-        let previous = +this.previousOperationText.innerText;
-        let current = +this.currentOperationText.innerText;
+        const previous = +this.previousOperationText.innerText;
+        const current = +this.currentOperationText.innerText;
 
         switch(operation){  // Fiquei AQUI 
             case "+" :
+                    operationValue = previous + current
+                    this.updateScreen(operationValue, operation, current, previous)
                 break;
             default:
                 return;

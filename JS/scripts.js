@@ -22,6 +22,14 @@ class Calculator {
 
     // Processa todas as operações da calculadora
     processOperation(operation) {
+        // Verifica se o valor atual está vasio
+        if(this.currentOperationText.innerText === "") {
+             // Muda a operação
+            if(this.previousOperationText.innerText !== "") {
+               this.changeOperation(operation);
+            }
+            return;
+        }
         // obtem valores atuais e valores anteriores
         let operationValue
         const previous = +this.previousOperationText.innerText.split(" ")[0];
@@ -65,6 +73,14 @@ class Calculator {
             this.currentOperationText.innerText = "";
         }
          
+    }
+
+    // Muda a operação matemática
+    changeOperation(operation){
+        const mathOperations = ["*", "/", "+", "-"]
+        if(!mathOperations.includes(operation)){
+            return
+        }
     }
 }
 

@@ -80,7 +80,9 @@ class Calculator {
         const mathOperations = ["*", "/", "+", "-"]
         if(!mathOperations.includes(operation)){
             return
-        }
+        } 
+
+        this.previousOperationText.innerText = this.previousOperationText.innerText.slice(0, -1) + operation;
     }
 }
 

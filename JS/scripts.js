@@ -57,7 +57,10 @@ class Calculator {
                 break;  
             case "CE" :
                     this.processClearCurrentOperation();
-                 break;   
+                 break; 
+            case "C" :
+                    this.processClearAllOperations();
+                 break;       
             default:
                 return;
         }
@@ -99,6 +102,11 @@ class Calculator {
     // Apaga a operação atual
     processClearCurrentOperation(){
         this.currentOperationText.innerText = "";
+    }
+
+    // Apaga todas as operações
+    processClearAllOperations(){
+        
     }
 }
 

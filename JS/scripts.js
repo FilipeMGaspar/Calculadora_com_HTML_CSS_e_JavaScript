@@ -23,7 +23,7 @@ class Calculator {
     // Processa todas as operações da calculadora
     processOperation(operation) {
         // Verifica se o valor atual está vasio
-        if(this.currentOperationText.innerText === "") {
+        if(this.currentOperationText.innerText === "" && operation !== "C") {
              // Muda a operação
             if(this.previousOperationText.innerText !== "") {
                this.changeOperation(operation);

@@ -54,7 +54,10 @@ class Calculator {
                 break;   
             case "DEL" :
                    this.processDelOperator();
-                break;     
+                break;  
+            case "CE" :
+                    this.processDelOperator();
+                 break;   
             default:
                 return;
         }

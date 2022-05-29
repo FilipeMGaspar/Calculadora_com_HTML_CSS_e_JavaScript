@@ -56,7 +56,7 @@ class Calculator {
                    this.processDelOperator();
                 break;  
             case "CE" :
-                    this.processDelOperator();
+                    this.processClearCurrentOperation();
                  break;   
             default:
                 return;
@@ -96,6 +96,10 @@ class Calculator {
         this.currentOperationText.innerText = this.currentOperationText.innerText.slice(0, -1)
     }
 
+    // Apaga a operação atual
+    processClearCurrentOperation(){
+        this.currentOperationText.innerText = "";
+    }
 }
 
 

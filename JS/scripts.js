@@ -39,6 +39,7 @@ class Calculator {
 
     //Muda os valores no visor da calculadora
     updateScreen(operationValue = null, operation=null, current = null, previous = null) {
+        console.log(operationValue, operation, current, previous);
         this.currentOperationText.innerText += this.currentOperation; 
     }
 }

@@ -43,7 +43,13 @@ class Calculator {
         if(operationValue === null){
             this.currentOperationText.innerText += this.currentOperation;
         } else{
+            // Verfifcando se o valor é 0, se for soma apenas o valor atual
+            if(previous === 0){
+                operationValue = current
+            }
 
+            // Adicionando o valor atual ao valor anterior
+            this.previousOperationText.innerText = `${operationValue} ${operation}`
         }
          
     }
